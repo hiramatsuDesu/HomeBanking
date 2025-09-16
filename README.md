@@ -29,7 +29,7 @@ docker compose -f docker-compose.yml up -d --build
 ./mvnw spring-boot:run
 
 # Acceder:
-[POST](http://localhost:8000/homeBanking)
+POST -> http://localhost:8000/homeBanking
 name: "nombre"
 
 Respuesta:
@@ -41,9 +41,9 @@ Respuesta:
 
 
 # AddAmount -Ingresar dinero- :
-[POST](http://localhost:8000/homeBanking/f66e9e13-a6f0-4205-9b8f-cd4cb44009bb/865f12c2-2eb2-4cb6-831d-5f14864c04a2/add/1000.00)
+POST -> http://localhost:8000/homeBanking/f66e9e13-a6f0-4205-9b8f-cd4cb44009bb/865f12c2-2eb2-4cb6-831d-5f14864c04a2/add/1000.00
 
 # TakeAmount -Retirar dinero-
-[POST](http://localhost:8000/homeBanking/f66e9e13-a6f0-4205-9b8f-cd4cb44009bb/865f12c2-2eb2-4cb6-831d-5f14864c04a2/add/20.00)
+POST -> http://localhost:8000/homeBanking/f66e9e13-a6f0-4205-9b8f-cd4cb44009bb/865f12c2-2eb2-4cb6-831d-5f14864c04a2/add/20.00
 
 
